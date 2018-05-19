@@ -35,6 +35,8 @@
                    kind="IMPORTANT_FILES_FOLDER">
       <itemPath>Makefile</itemPath>
     </logicalFolder>
+    <itemPath>.gitignore</itemPath>
+    <itemPath>README.md</itemPath>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
@@ -49,9 +51,13 @@
           <commandLine>-pthread</commandLine>
         </ccTool>
       </compileType>
+      <item path=".gitignore" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="Node.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Node.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="README.md" ex="false" tool="3" flavor2="0">
       </item>
       <item path="SignalHandler.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -92,9 +98,13 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path=".gitignore" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="Node.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Node.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="README.md" ex="false" tool="3" flavor2="0">
       </item>
       <item path="SignalHandler.cpp" ex="false" tool="1" flavor2="0">
       </item>

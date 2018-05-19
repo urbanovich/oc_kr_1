@@ -17,7 +17,7 @@
 #include "Node.h"
 #include <iostream>
 #include <cstddef>
-#include <signal.h>
+#include <pthread.h>
 #include <thread>
 
 class ThreadTree {
@@ -27,7 +27,7 @@ public:
     virtual ~ThreadTree();
     
     static void createThreadByTree(Node **nodes);
-    static void createThreadTree(Node **nodes);
+    static void createThreadTree(void *nodes);
 private:
 
 };
