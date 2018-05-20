@@ -18,7 +18,10 @@
 #include <iostream>
 #include <cstddef>
 #include <pthread.h>
-#include <thread>
+#include <signal.h>
+#include <unistd.h>
+
+#include "SignalHandler.h"
 
 class ThreadTree {
 public:
@@ -27,7 +30,9 @@ public:
     virtual ~ThreadTree();
     
     static void createThreadByTree(Node **nodes);
-    static void createThreadTree(void *nodes);
+    static void *createThreadTree(void *nodes);
+    static void sendSignal(Node **nodes);
+    
 private:
 
 };

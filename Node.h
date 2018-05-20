@@ -14,7 +14,7 @@
 #ifndef NODE_H
 #define NODE_H
 
-#include <thread>
+#include <pthread.h>
 
 class Node {
 public:
@@ -26,7 +26,7 @@ public:
     
     int type = 0;
     
-    std::thread::id thread_id;
+    pthread_t th;
     
     Node *left;
     Node *right;
